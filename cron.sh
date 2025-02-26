@@ -1,6 +1,9 @@
 #!/bin/sh
 set -u
 
+cd /opt/my-fast-cf-ip/
+echo "shell working with $(pwd)"
+
 if ![ command -v go > /dev/null 2>&1 ] ; then
     echo "install golang"
     echo "e.g. sudo apt-get install golang"
